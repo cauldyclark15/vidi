@@ -7,7 +7,11 @@
     "lint": "eslint js/**/*.js webpack.config.js",
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "test": "NODE_ENC=test jest",
+    "update-test": "npm run test -- -u",
+    "cover": "npm run test -- --coverage",
+    "start": "NODE_ENV=server node server.js"
   },
   "repository": {
     "type": "git",
